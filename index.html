@@ -1,50 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Inicial</title>
     <style>
-        body {
-            margin: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      body {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-        header {
-            background-color: #8a78a3;
-            margin: 0px;
-            padding: 20px 0px;
-            text-align: center;
-        }
+      header {
+        background-color: #8a78a3;
+        margin: 0px;
+        padding: 20px 0px;
+        text-align: center;
+      }
 
-        nav {
-            text-align: left;
-            margin-left: 20vw;
-        }
+      nav {
+        text-align: left;
+        margin-left: 20vw;
+      }
 
-        nav a {
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 15px;
-        }
+      nav a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 15px;
+      }
 
-        nav a:hover {
-            color: white;
-            background-color: #ffffff3a;
-        }
+      nav a:hover {
+        color: white;
+        background-color: #ffffff3a;
+      }
+
+      .container {
+        display: flex;
+        /* ativa o flex */
+        gap: 16px;
+        /* espaço entre os blocos */
+      }
+
+      .box-left {
+        /* background-color: aqua; */
+        padding: 20px;
+        flex: 1;
+        /* todas ficam do mesmo tamanho */
+        text-align: left;
+        margin-left: 20%;
+      }
+
+      .box-left a {
+        margin: 0px 30px;
+      }
+
+      .box-right {
+        /* background-color: aqua; */
+        padding: 20px;
+        flex: 1;
+        /* todas ficam do mesmo tamanho */
+        text-align: right;
+        margin-right: 20%;
+      }
+
+      .box-right p {
+        margin: 5px 0px;
+      }
+
+      .container a {
+        text-align: left;
+      }
+
+      .container a:visited {
+        color: blue;
+      }
+
+    footer {
+        position: absolute;
+        bottom: 0px;
+        left: 50px;
+        padding: 5px 10px;
+        text-align: center;
+    }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Kirishima</h1>
-        <nav>
-            <a href="blog-posts.html">Blog</a>
-            <a href="#">Shorts</a>
-        </nav>
-    </header>
-</body>
+      <h1>Kirishima</h1>
+      <nav>
+        <a href="blog-posts.html">Blog</a>
+        <a href="#">Shorts</a>
+      </nav>
+    </header> 
 
+    <div class="container">
+        <!-- Left Box-->
+      <div class="box-left">
+        <h1>*</h1>
+      </div>
+
+        <!-- Right Box -->
+      <div class="box-right">
+        <h1>Latest</h1>
+        <p>Blog: <a href="post-001.html">Crashes in Minecraft ATM 9</a></p>
+      </div>
+
+    </div>
+    <footer>
+        <p>Design inspirado por <a href="https://www.scaruffi.com/index.html">Scaruffi.com</a></p>
+    </footer>
+  </body>
 </html>
