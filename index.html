@@ -1,137 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Inicial</title>
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-      body {
-        margin: 0px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+        body {
+            background-color: #10002e;
+            background-image: url(tumblr_1f64c897066186464be7bcc02924491a_b5e066ae_400.gif);
+            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        }
 
-      header {
-        background-color: #8a78a3;
-        margin: 0px;
-        padding: 20px 0px;
-        text-align: center;
-      }
+        td {
+            padding: 10px;
+        }
 
-      nav {
-        text-align: left;
-        margin-left: 20vw;
-      }
-
-      nav a {
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 15px;
-        border-radius: 8px;
-      }
-
-      nav a:hover {
-        color: white;
-        background-color: #ffffff3a;
-        transition: 0.3s ease;
-      }
-
-      .container {
-        display: flex;
-        /* ativa o flex */
-        gap: 16px;
-        /* espaço entre os blocos */
-      }
-
-      .box-left {
-        /* background-color: aqua; */
-        padding: 20px;
-        flex: 1;
-        /* todas ficam do mesmo tamanho */
-        text-align: left;
-        margin-left: 20%;
-      }
-
-      .box-left a {
-        margin: 0px 30px;
-      }
-
-      .box-right {
-        /* background-color: aqua; */
-        padding: 20px;
-        flex: 1;
-        /* todas ficam do mesmo tamanho */
-        text-align: right;
-        margin-right: 20%;
-      }
-
-      .box-right p {
-        margin: 5px 0px;
-      }
-
-      .box-right a:hover {
-        background-color: #3b3b3b52;
-      }
-
-      .container a {
-        text-align: left;
-      }
-
-      .container a:visited {
-        color: blue;
-      }
-
-    footer {
-        position: absolute;
-        bottom: 0px;
-        left: 50px;
-        padding: 5px 10px;
-        text-align: center;
-    }
+        h1,
+        p,
+        a {
+            color: white;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
-    <header>
-      <h1>Página Inicial</h1>
-      <nav>
-        <a href="blog/blog-posts.html">Blog</a>
-        <a href="essays/essays.html">Shorts</a>
-      </nav>
-    </header> 
+<body>
+    <main>
+        <table style="margin: 0px auto;">
+            <tr>
+                <td colspan="3" style="background-color: #14181c;">
+                    <h1 style="text-align: center; font-family: 'Comic Sans MS', serif;">☆ WELCOME ☆</h1>
+                </td>
+            </tr>
 
-    <div class="container">
-        <!-- Left Box -->
-      <div class="box-left">
-        <h1>Music</h1>
-        <a href="music/all-musicians.html">All musicians</a><br>
-        <a href=""><strong>Rock</strong></a>
-        <h1>Media</h1>
-        <a href="media/swordsmen.html">Swords</a>
+            <tr>
+                <td style="background-color: #14181c;">
+                    <img src="https://media.tenor.com/yObMHBuLdnUAAAAi/buddha-asia.gif" alt="" width="100px">
+                    <p><a href="blog/blog-posts.html">Blog</a></p>
+                    <p><a href="essays/essays.html">Shorts</a></p>
+                    <p><a href="media/swordsmen.html">Swords</a></p>
+                    <p><a href="music/all-musicians.html">All musicians</a></p>
+                </td>
 
-      </div>
+                <td style="background-color: #14181c;">
+                    <h1>Latest Post</h1>
+                    <img src="https://media1.tenor.com/m/paU7ZLSP3b0AAAAC/evrima-server.gif" alt="" width="200px"
+                        height="150px" hspace="10" style="float: left;">
+                    <p>You have no enemies. No one has any enemies. There is no one that you should hurt.
+                    </p>
+                    <br> <br><br><br><br><br>
+                    <hr style="background-color: pink; height: 1px;">
+                    <h1>Fun facts</h1>
+                    <ul style="color: white;">
+                        <li>i hear music the entire day</li>
+                        <li>favorite hobbie: computer</li>
+                        <li>writing makes you better</li>
+                    </ul>
+                </td>
+                <td style="background-color: #14181c;">
+                    <p>⋆ ˚☆˖° ⋆ ｡ ° ✮ ˖ ࣪ ⊹ ⋆.˚</p>
+                    <img src="https://media1.tenor.com/m/K4XT3oqu3uYAAAAd/naruto-naruto-shippuden.gif" alt=""
+                        width="148px">
+                    <br>
+                    <img src="https://media1.tenor.com/m/F2mG0BN83GQAAAAC/anohana-menma.gif" alt="" width="150px"> <br>
+                    <p>Patrocinadores</p>
+                    <img src="https://anlucas.neocities.org/NGS_88x31_logo.gif" alt=""> <br>
+                    <img src="https://anlucas.neocities.org/wmp.gif" alt="">
+                </td>
+            </tr>
 
-        <!-- Right Box -->
-      <div class="box-right">
-        <h1>Latest</h1>
-        <p>[Em manutenção]</p>
-        <p>Blog: <a href="blog/post-0010.html">Die Tomorrow (2017)</a></p>
-        <p>Blog: <a href="blog/post-0009.html">Mudar</a></p>
-        <p>Blog: <a href="blog/post-0008.html">Algum progresso</a></p>
-        <p>Blog: <a href="blog/post-0007.html">Escrever é fundamental</a></p>
-        <p>Blog: <a href="blog/post-0006.html">I don't read books</a></p>
-        <p>Blog: <a href="blog/post-0005.html">The week was crap</a></p>
-        <p>Blog: <a href="blog/post-0004.html">Hiatus</a></p>
-        <p>Blog: <a href="blog/post-0003.html">O fim de My Hero Academia</a></p>
-        <p>Blog: <a href="blog/post-0002.html">It's a Summer Film!</a></p>
-        <p>Short: <a href="essays/physical-appearance.html">Reflexão sobre aparência física</a></p>
-        <p>Blog: <a href="blog/post-0001.html">Crashes in Minecraft ATM 9</a></p>
-      </div>
+            <tr>
+                <td colspan="3" style="background-color: #14181c;">
+                    <hr>
+                    <p style="text-align: center;">© 2002</p>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
 
-    </div>
-    <footer>
-        <p>Design inspirado por <a href="https://www.scaruffi.com/index.html">Scaruffi.com</a></p>
-    </footer>
-  </body>
 </html>
