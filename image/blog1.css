@@ -1,0 +1,24 @@
+body {
+    background-color: #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 20px 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+article p {
+    text-indent: 1.1em;
+}
