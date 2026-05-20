@@ -8,11 +8,16 @@
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <style>
         body {
-            background-color: #10002e;
-            background-image: url(tumblr_1f64c897066186464be7bcc02924491a_b5e066ae_400.gif);
+            background-color: #e8e8e8;
             /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         }
-
+        
+        main {
+            margin: 0;
+        }
+        /* table {
+            box-shadow: 11px 17px 18px -6px rgba(0,0,0,0.24)
+        } */
         td {
             padding: 10px;
         }
@@ -20,7 +25,40 @@
         h1,
         p,
         a {
-            color: white;
+            color: black;
+        }
+
+        td {
+            border: 2px outset #DEDEDE;
+            background-color: #c1c1c1;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .window-header {
+            background-color: #000080;
+            margin: 0px 0px 20px 0px;
+            height: 20px;
+            position: relative;
+        }
+        .window-button {
+            background-color: #c1c1c1;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 14px;
+            width: 16px;
+            position: absolute;
+            right: 4px;
+            top: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .window-button::before {
+            content: "x";
         }
     </style>
 </head>
@@ -29,13 +67,16 @@
     <main>
         <table style="margin: 0px auto;">
             <tr>
-                <td colspan="3" style="background-color: #14181c;">
+                <td colspan="3" style="margin: 0px; padding: 0;">
+                    <div class="window-header">
+                        <div class="window-button"></div>
+                    </div>
                     <h1 style="text-align: center; font-family: 'Comic Sans MS', serif;">☆ WELCOME ☆</h1>
                 </td>
             </tr>
 
             <tr>
-                <td style="background-color: #14181c;">
+                <td>
                     <img src="https://media.tenor.com/yObMHBuLdnUAAAAi/buddha-asia.gif" alt="" width="100px">
                     <p><a href="blog/blog-posts.html">Blog</a></p>
                     <!-- <p><a href="blog/blog-posts.html">Diary</a></p> -->
@@ -45,8 +86,8 @@
                     <p><a href="til.html">TIL</a></p>
                 </td>
 
-                <td style="background-color: #14181c;">
-                    <h1>Latest Post</h1>
+                <td>
+                    <!-- <h1>Latest Post</h1> -->
                     <img src="https://media1.tenor.com/m/paU7ZLSP3b0AAAAC/evrima-server.gif" alt="" width="200px"
                         height="150px" hspace="10" style="float: left;">
                     <p>You have no enemies. No one has any enemies. There is no one that you should hurt.
@@ -54,13 +95,13 @@
                     <br> <br><br><br><br><br>
                     <hr style="background-color: pink; height: 1px;">
                     <h1>Fun facts</h1>
-                    <ul style="color: white;">
+                    <ul>
                         <li>i hear music the entire day</li>
                         <li>favorite hobbie: computer</li>
                         <li>writing makes you better</li>
                     </ul>
                 </td>
-                <td style="background-color: #14181c;">
+                <td>
                     <p>⋆ ˚☆˖° ⋆ ｡ ° ✮ ˖ ࣪ ⊹ ⋆.˚</p>
                     <img src="https://media1.tenor.com/m/K4XT3oqu3uYAAAAd/naruto-naruto-shippuden.gif" alt=""
                         width="148px">
@@ -73,7 +114,7 @@
             </tr>
 
             <tr>
-                <td colspan="3" style="background-color: #14181c;">
+                <td colspan="3">
                     <hr>
                     <p style="text-align: center;">© 2002</p>
                 </td>
